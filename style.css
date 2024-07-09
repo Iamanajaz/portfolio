@@ -8,8 +8,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 p{
-    letter-spacing: 1px;
-    line-height: 1.2;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow:-moz-hidden-unscrollable;
+}
+.repo-card{
+    margin-top:10%;
+    padding-left: 30%;
+    width: 400px;
+    height: 100px;
 }
 .navbar{
     display: flex;
@@ -60,18 +66,19 @@ p{
     justify-content: center;
     padding: 30px;
 }
-
+.txt-left{
+    padding-top: 50px;
+}
 .txt-left h1{
+    
     padding-top: 10px;
 }
 
 .txt-left .developer-txt{
-    padding-top: 10px;
+    padding-top: 1px;
 }
 
-.txt-left p{
-    padding-top: 10px;
-}
+
 
 .txt-left .social-media{
     padding-top: 13px;
