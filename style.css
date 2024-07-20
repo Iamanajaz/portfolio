@@ -1,15 +1,26 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 1px;
 }
 
 body{
     background-color: rgb(11 8 18);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* display: flex; */
 }
+
 p{
+    /* display: flex;
+    flex-wrap: wrap-reverse;
+     */
+     justify-content: center;
+     align-items: center;
+    margin: 10px;
     font-family:Arial, Helvetica, sans-serif;
-    overflow:-moz-hidden-unscrollable;
+    overflow:visible;
+    font-size: 13px;
+    /* text-align:center; */
+    line-height: 20px;
 }
 .repo-card{
     margin-top:10%;
@@ -54,7 +65,7 @@ p{
     justify-content: center;
     align-items: center;
     column-gap: 50px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .hero-box .txt-left{
@@ -78,7 +89,29 @@ p{
     padding-top: 1px;
 }
 
+#insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+#insta:hover{
+    -webkit-text-fill-color: cyan;
+}
 
+.txt-left .social-media:hover {
+    transform: scale(1.1);
+    transition: transform 0.6s ease-in-out;
+    /* transition-duration: 2s; */
+    
+}
+#fb:hover{
+    /* transform: matrix3d(20deg); */
+    transition: transform 0.6s ease-in-out;
+    /* transform:rotate(20deg); */
+    /* transform: scale(1.5); */
+}
 
 .txt-left .social-media{
     padding-top: 13px;
@@ -87,21 +120,27 @@ p{
 .txt-left .social-media{
     display: flex;
     column-gap: 20px;
+    transition: all ease 0.5s;
 }
 
 .txt-left .social-media i{
     font-size: 37px;
     cursor: pointer;
     transition: all ease 0.5s;
+
 }
 
 .txt-left .social-media i:hover{
     color: cyan;
+    transition: transform 0.5s ease-in-out;
+    transform: scaleY(1.2);
+    
 }
 
 .txt-left button{
-    padding: 12px;
-    width: 125px;
+    font-size: 15px;
+    padding: 15px;
+    width: 150px;
     border-radius: 20px;
     border: none;
     margin-top: 17px;
@@ -115,11 +154,13 @@ p{
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 255, 242, 0.25) 0px 54px 55px, rgba(0, 255, 255, 0.12) 0px -12px 30px, rgba(0, 255, 200, 0.12) 0px 4px 6px, rgba(8, 231, 213, 0.17) 0px 12px 13px, rgba(2, 247, 185, 0.09) 0px -3px 5px;
     cursor: pointer;
+    
+    
 }
 
 .hero-box .img-right{
     width: 400px;
-    height: 337px;
+    height: 357px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,12 +168,16 @@ p{
 
 .hero-box .img-right img{
     border-radius: 50%;
+    width: 400px;
+    height: 450px;
     cursor: pointer;
     transition: all ease 0.5s;
     box-shadow: rgba(0, 269, 219, 0.25) 0px -21px 139px, rgba(0, 255, 255, 0.12) 0px -12px 30px, rgba(0, 255, 200, 0.12) 0px 4px 6px, rgba(8, 231, 213, 0.17) 0px 31px 15px, rgba(2, 247, 185, -0.91) 0px -3px 18px;
 }
 
-.hero-box .img-right img:hover{
+ .hero-box .img-right img:hover{
     cursor: pointer;
     box-shadow: rgba(0, 102, 255, 0.12) 0px -21px 139px, rgba(0, 255, 255, 0.12) 0px -12px 30px, rgba(0, 102, 255, 0.12) 0px 4px 6px, rgba(8, 231, 213, 0.17) 0px 31px 15px, rgba(2, 247, 185, -0.91) 0px -3px 18px;
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
 }
