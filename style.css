@@ -181,3 +181,9 @@ p{
     transform: scale(1.1);
     transition: transform 0.5s ease-in-out;
 }
+
+/* linkdln */
+.badge-base LI-profile-badge{
+    text-align: center;
+    flex-direction: left;
+}
