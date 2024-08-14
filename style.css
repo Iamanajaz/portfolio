@@ -78,7 +78,9 @@ p{
     padding: 30px;
 }
 .txt-left{
+    margin-right: 9%;
     padding-top: 50px;
+    padding-right: 3%;
 }
 .txt-left h1{
     
@@ -196,4 +198,37 @@ p{
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
 
+}
+
+#app {
+    overflow: hidden;
+}
+
+#app a {
+    margin-top: 10px;
+    
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #app canvas {
+    opacity: 50%;
+    position: fixed;
+    z-index: -5;
+    top: 0;
+  }
+@media (max-width: 678px) {
+    .container {
+      grid-template-rows: 50px 50px 50px 1fr 
+      50px 50px 50px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "container"
+        "navbar"
+        "logo"
+        "menu"
+        "home"
+        "hero-box"
+        "txt-left";
+      }
 }
