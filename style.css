@@ -84,10 +84,10 @@ body{
     padding-top: 50px;
     padding-right: 3%;
 }
-p{
+#dev {
     padding: 10px 0 0 10px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
     line-height: 22px;
 }
 .txt-left h1{
@@ -231,6 +231,67 @@ p{
     text-align: center;
     font-size: 50px;
     transition: transform 2s ease-in-out;
+}
+
+/* projects */
+
+.intro{
+    padding: 22px 0px;
+    
+}
+.intro-container{
+    display: flex;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+
+}
+
+.intro-container-content{
+    width:25%;
+    /* border:2px solid; */
+    padding-bottom: 20px;
+}
+
+.intro-image img{
+    /* border: 2px solid white; */
+    width:100%;
+    border-radius: 50px;
+    transition: all ease 0.9s;
+    overflow: hidden;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+}
+
+.intro-image img:hover{
+    transform:scale(1.24);
+    transition:transform 0.9s all ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.intro-content-section h2{
+    /* z-index: +3; */
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.2s ease;
+    font-size: 24px;
+}
+
+.intro-content-section h2:hover{
+    color:cyan;
+}
+
+.intro-content-section p{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
 }
 
 
