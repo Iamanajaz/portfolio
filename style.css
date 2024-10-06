@@ -250,7 +250,8 @@ body{
 }
 
 .intro-container-content{
-    width:25%;
+    width: 300px;
+    /* width: 25%; */
     /* border:2px solid; */
     padding-bottom: 20px;
 }
@@ -278,7 +279,7 @@ body{
     font-weight: 600;
     text-align: center;
     transition: 0.2s ease;
-    font-size: 24px;
+    font-size: 23px;
 }
 
 .intro-content-section h2:hover{
