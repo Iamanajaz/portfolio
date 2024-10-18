@@ -35,7 +35,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    padding: 0 100px !important;
+    padding: 0 50px !important;
 }
 
 .navbar, .logo h1{
@@ -157,14 +157,13 @@ body{
     border: none;
     margin-top: 17px;
     background-color: cyan;
-    box-shadow: rgba(0, 255, 242, 0.25) 0px 54px 55px, rgba(0, 255, 255, 0.12) 0px -12px 30px, rgba(0, 255, 200, 0.12) 0px 4px 6px, rgba(8, 231, 213, 0.17) 0px 12px 13px, rgba(2, 247, 185, 0.09) 0px -3px 5px;
     cursor: pointer;
     transition: all ease 0.5s;
 }
 
 .txt-left button:hover{
     background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 255, 242, 0.25) 0px 54px 55px, rgba(0, 255, 255, 0.12) 0px -12px 30px, rgba(0, 255, 200, 0.12) 0px 4px 6px, rgba(8, 231, 213, 0.17) 0px 12px 13px, rgba(2, 247, 185, 0.09) 0px -3px 5px;
+    box-shadow:  rgba(0, 255, 255, 0.12) 10px -12px 30px, rgba(0, 255, 200, 0.12) 0px 4px 6px, rgba(8, 231, 213, 0.17) 0px 18px 13px, rgba(2, 247, 185, 0.09) 0px 3px 5px;
     cursor: pointer;
     
     
@@ -198,25 +197,23 @@ body{
 /* linkedin */
 .tabs{
     display: flex;
-    position: absolute;
+    /* position: absolute; */
     background-color: rgb(11 8 18);
 }
 
 .batch-linkedin{
-    padding: 5% 0 0 18%;
+    padding: 5% 0 0 15%;
     width: 100px;
     height: 10px;
     font-size: 20px;
-    display: flex;
-    flex-direction: column;
+    
 }
-
-.batch-linkedin:hover{
-    cursor: pointer;
-    transition: transform 0.5s ease-in-out;
-
+/* .profile-badge__content-profile-headline{
+    font-size: 20px;
 }
-
+.profile-badge__content-profile-company-school-info{
+    font-size: 50px;
+} */
 
 .youtubebox{
     padding: 14px 0 0 50%; 
@@ -239,13 +236,18 @@ body{
     padding: 22px 0px;
     
 }
+.intro-header h1{
+    padding: 0px 0px 20px 20px;
+    font-weight: 600;
+    font-size: 35px;
+    color: white;
+}
 .intro-container{
     display: flex;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
+    
     justify-content: center;
     align-items: center;
-    column-gap: 50px;
+    column-gap: 20px;
 
 }
 
@@ -257,8 +259,8 @@ body{
 }
 
 .intro-image img{
-    /* border: 2px solid white; */
-    width:100%;
+   
+    width:77%;
     border-radius: 50px;
     transition: all ease 0.9s;
     overflow: hidden;
@@ -266,7 +268,7 @@ body{
 }
 
 .intro-image img:hover{
-    transform:scale(1.24);
+    transform:scale(1.09);
     transition:transform 0.9s all ease;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -297,19 +299,3 @@ body{
 
 
 
-
-@media (max-width: 678px) {
-    .container {
-      grid-template-rows: 50px 50px 50px 1fr 
-      50px 50px 50px;
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "container"
-        "navbar"
-        "logo"
-        "menu"
-        "home"
-        "hero-box"
-        "txt-left";
-      }
-}
