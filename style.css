@@ -37,7 +37,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    padding: 0 50px !important;
+    padding: 0 50px;
 }
 
 .navbar,
@@ -55,7 +55,7 @@ body {
 .navbar,
 .menu a {
     color: white;
-    text-decoration: none !important;
+    text-decoration: none ;
     padding: 10px;
 }
 
@@ -119,6 +119,17 @@ body {
     -webkit-text-fill-color: cyan;
 }
 
+.social-media svg{
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    
+}
+.social-media svg:hover{
+    fill: cyan;
+    transition: transform 0.5s ease-in-out;
+    transform: scaleY(1.2);
+}
 .txt-left .social-media:hover {
     transform: scale(1.1);
     transition: transform 0.6s ease-in-out;
@@ -127,12 +138,12 @@ body {
 }
 
 .txt-left .social-media {
-    padding-top: 13px;
+    padding-top: 10px;
 }
 
 .txt-left .social-media {
     display: flex;
-    column-gap: 20px;
+    column-gap: 16px;
     transition: all ease 0.5s;
 }
 
@@ -203,6 +214,7 @@ body {
 .tabs {
     display: flex;
     /* position: absolute; */
+    column-gap: 30px;
     background-color: rgb(11 8 18);
 }
 
