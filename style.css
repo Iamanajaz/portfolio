@@ -67,23 +67,26 @@ body {
 .menu a:hover {
     border: 1px solid cyan;
 }
-
+.container{
+    padding: 0 50px;
+    margin: 10px 0;
+}
 .hero-box {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 50px;
-    margin-top: 80px;
+    /* margin: 50px 0px; */
 }
 
 .hero-box .txt-left {
     color: white;
-    width: 393px;
-    height: 337px;
+    width: 30%;
+    /* height: 337px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 .txt-left {
@@ -169,9 +172,10 @@ body {
     width: 150px;
     border-radius: 20px;
     border: none;
-    margin-top: 17px;
+    display: flex;
+    margin-top: 3%;
     background-color: cyan;
-    cursor: pointer;
+    
     transition: all ease 0.5s;
 }
 
@@ -182,10 +186,13 @@ body {
 
 
 }
+.txt-left a{
+    text-decoration: none;
+}
 
 .hero-box .img-right {
     width: 350px;
-    height: 250px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,7 +210,7 @@ body {
 
 .hero-box .img-right img:hover {
 
-    /* box-shadow: rgba(0, 102, 255, 0.12) 0px -21px 139px, rgba(0, 255, 255, 0.12) 0px -12px 30px, rgba(0, 102, 255, 0.12) 0px 4px 6px, rgba(8, 231, 213, 0.17) 0px 31px 15px, rgba(2, 247, 185, -0.91) 0px -3px 18px; */
+    box-shadow: rgba(0, 102, 255, 0.12) 0px -21px 139px, rgba(0, 255, 255, 0.12) 0px -12px 30px, rgba(0, 102, 255, 0.12) 0px 4px 6px, rgba(8, 231, 213, 0.17) 0px 31px 15px, rgba(2, 247, 185, -0.91) 0px -3px 18px;
     transform: scale(1.1);
     border: none;
     transition: transform 0.5s ease-in-out;
@@ -211,35 +218,17 @@ body {
 
 
 /* linkedin */
-.tabs {
+#tabs {
     display: flex;
-    /* position: absolute; */
-    column-gap: 30px;
-    background-color: rgb(11 8 18);
+    /* margin: 35px 0px; */
+    margin-bottom: 40px;
+    justify-content: space-evenly;
+    /* column-gap: 10px; */
+    /* background-color: rgb(11 8 18); */
 }
-
-.batch-linkedin {
-    padding: 5% 0 0 15%;
-    width: 100px;
-    height: 10px;
-    font-size: 20px;
-
+.batch-linkedin{
+    margin:-21px 0px;
 }
-
-/* .profile-badge__content-profile-headline{
-    font-size: 20px;
-}
-.profile-badge__content-profile-company-school-info{
-    font-size: 50px;
-} */
-
-.youtubebox {
-    padding: 14px 0 0 50%;
-    border-radius: 20px;
-
-}
-
-
 #connect {
     border: 1px solid white;
     color: white;
@@ -256,9 +245,9 @@ body {
 }
 
 .intro-header h1 {
-    padding: 0px 0px 20px 20px;
-    font-weight: 600;
-
+    padding: 20px 10px;
+    font-weight: 550;
+    font-size: 28px;
     color: white;
 }
 
@@ -284,7 +273,7 @@ body {
     border-radius: 50px;
     transition: all ease 0.9s;
     overflow: hidden;
-    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .intro-image img:hover {
