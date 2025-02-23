@@ -3,10 +3,10 @@
     padding: 1px;
 }
 
-body {
+body{
     background-color: rgb(11 8 18);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* display: flex; */
+    color: white;    
 }
 
 #app {
@@ -32,61 +32,56 @@ body {
     height: 100px;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    padding: 0 50px;
-}
 
-.navbar,
-.logo h1 {
+#navbarNav{
+    justify-content: end;
+    gap: 20px;
+    
+}
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color:  transparent !important;
+}
+.nav-link,.navbar-brand {
     color: white;
-    cursor: pointer;
+    
 }
-
-.navbar,
-.menu {
-    display: flex;
-    column-gap: 30px;
-}
-
-.navbar,
-.menu a {
-    color: white;
-    text-decoration: none ;
-    padding: 10px;
-}
-
-.navbar,
-.menu .home {
+.navbar-brand:hover{
     color: cyan;
 }
-
-.menu a:hover {
-    border: 1px solid cyan;
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: cyan;
+}
+#navbarNav a:hover {
+    color: cyan;
 }
 .container{
     padding: 0 50px;
-    margin: 10px 0;
+    /* margin: 10px 0; */
 }
 .hero-box {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 50px;
+    justify-content: space-around;
+    padding: 0 2rem;
+    flex-wrap: wrap-reverse;
+    padding: 30px 35px;
+    
+    /* align-items: center; */
+    /* column-gap: 50px; */
     /* margin: 50px 0px; */
 }
 
 .hero-box .txt-left {
     color: white;
-    width: 30%;
+    /* align-items: center; */
+    /* width: 30%; */
+    width: 45rem;
     /* height: 337px; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: left; */
     padding: 20px;
+    margin: auto;
 }
 
 .txt-left {
@@ -220,11 +215,12 @@ body {
 /* linkedin */
 #tabs {
     display: flex;
-    /* margin: 35px 0px; */
-    margin-bottom: 40px;
+    
+    margin-bottom: 2.1rem;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    /* column-gap: 10px; */
-    /* background-color: rgb(11 8 18); */
+    gap: 2rem;
+  
 }
 .batch-linkedin{
     margin:-21px 0px;
@@ -253,7 +249,7 @@ body {
 
 .intro-container {
     display: flex;
-
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     column-gap: 20px;
