@@ -6,24 +6,21 @@
 body{
     background-color: rgb(11 8 18);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;    
+    color: white;
+    text-decoration: none;  
 }
 
 #app {
     overflow: hidden;
-    /* width: 1342px;
-    height: 611px; */
 }
 
 #app canvas {
-
     position: fixed;
     opacity: 50%;
     z-index: -5;
     top: 0;
 
 }
-
 
 .repo-card {
     margin-top: 10%;
@@ -55,56 +52,35 @@ body{
 #navbarNav a:hover {
     color: cyan;
 }
-.container{
-    padding: 0 50px;
-    /* margin: 10px 0; */
-}
+
 .hero-box {
     display: flex;
+    margin: 1rem auto;
     justify-content: space-around;
-    padding: 0 2rem;
-    flex-wrap: wrap-reverse;
-    padding: 30px 35px;
-    
-    /* align-items: center; */
-    /* column-gap: 50px; */
-    /* margin: 50px 0px; */
-}
-
-.hero-box .txt-left {
-    color: white;
-    /* align-items: center; */
-    /* width: 30%; */
-    width: 45rem;
-    /* height: 337px; */
-    display: flex;
-    flex-direction: column;
-    /* justify-content: left; */
-    padding: 20px;
-    margin: auto;
+    flex-wrap: wrap-reverse;    
 }
 
 .txt-left {
-    margin-right: 9%;
-    padding-top: 50px;
-    padding-right: 3%;
+    color: white;
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
 }
 
+
+
 #dev {
-    padding: 10px 0 0 10px;
+    /* padding: 10px 0 0 10px; */
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1rem;
 }
 
 .txt-left h1 {
     font-size: 2.5rem;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 
-.txt-left .developer-txt {
-    padding: 1px 0 0 0;
-}
 
 #insta {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -117,14 +93,15 @@ body{
     -webkit-text-fill-color: cyan;
 }
 
-.social-media svg{
+.social-media svg, img{
     width: 45px;
     height: 45px;
     padding: 0;
     
 }
-.social-media svg:hover{
+.social-media img:hover, svg:hover{
     fill: cyan;
+    filter: brightness(0) saturate(100%) invert(92%) sepia(83%) saturate(3563%) hue-rotate(106deg) brightness(100%) contrast(105%);
     transition: transform 0.5s ease-in-out;
     transform: scaleY(1.2);
 }
@@ -142,6 +119,7 @@ body{
 .txt-left .social-media {
     display: flex;
     column-gap: 16px;
+    flex-wrap: wrap;
     transition: all ease 0.5s;
 }
 
@@ -162,9 +140,11 @@ body{
 }
 
 .txt-left button {
-    font-size: 15px;
+    /* font-size: 0.9rem; */
     padding: 15px;
-    width: 150px;
+    width: 12rem;
+    
+
     border-radius: 20px;
     border: none;
     display: flex;
@@ -181,8 +161,9 @@ body{
 
 
 }
-.txt-left a{
+.hero-box button a {
     text-decoration: none;
+    color: black;
 }
 
 .hero-box .img-right {
@@ -215,15 +196,20 @@ body{
 /* linkedin */
 #tabs {
     display: flex;
-    
+    margin: 1rem auto;
     margin-bottom: 2.1rem;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
-  
+}
+.youtubebox img{
+    margin-top: 0.7rem;
+    width: 13rem;
+    height: 13rem;
 }
 .batch-linkedin{
-    margin:-21px 0px;
+    margin: -19px 0px;
 }
 #connect {
     border: 1px solid white;
@@ -237,7 +223,6 @@ body{
 
 .intro {
     padding: 22px 0px;
-
 }
 
 .intro-header h1 {
@@ -266,6 +251,7 @@ body{
 .intro-image img {
 
     width: 77%;
+    height: 18rem;
     border-radius: 50px;
     transition: all ease 0.9s;
     overflow: hidden;
