@@ -3,11 +3,15 @@
     padding: 1px;
 }
 
-body{
+body {
     background-color: rgb(11 8 18);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    text-decoration: none;  
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+
 }
 
 #app {
@@ -30,25 +34,32 @@ body{
 }
 
 
-#navbarNav{
+#navbarNav {
     justify-content: end;
     gap: 20px;
-    
+
 }
+
 .bg-body-tertiary {
     --bs-bg-opacity: 1;
-    background-color:  transparent !important;
+    background-color: transparent !important;
 }
-.nav-link,.navbar-brand {
+
+.nav-link,
+.navbar-brand {
     color: white;
-    
+
 }
-.navbar-brand:hover{
+
+.navbar-brand:hover {
     color: cyan;
 }
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
     color: cyan;
 }
+
 #navbarNav a:hover {
     color: cyan;
 }
@@ -57,7 +68,7 @@ body{
     display: flex;
     margin: 1rem auto;
     justify-content: space-around;
-    flex-wrap: wrap-reverse;    
+    flex-wrap: wrap-reverse;
 }
 
 .txt-left {
@@ -73,6 +84,8 @@ body{
 #dev {
     /* padding: 10px 0 0 10px; */
     font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    padding-right: 15px;
     font-size: 1rem;
 }
 
@@ -93,18 +106,22 @@ body{
     -webkit-text-fill-color: cyan;
 }
 
-.social-media svg, img{
+.social-media svg,
+img {
     width: 45px;
     height: 45px;
     padding: 0;
-    
+
 }
-.social-media img:hover, svg:hover{
+
+.social-media img:hover,
+svg:hover {
     fill: cyan;
     filter: brightness(0) saturate(100%) invert(92%) sepia(83%) saturate(3563%) hue-rotate(106deg) brightness(100%) contrast(105%);
     transition: transform 0.5s ease-in-out;
     transform: scaleY(1.2);
 }
+
 .txt-left .social-media:hover {
     transform: scale(1.1);
     transition: transform 0.6s ease-in-out;
@@ -143,14 +160,14 @@ body{
     /* font-size: 0.9rem; */
     padding: 15px;
     width: 12rem;
-    
+
 
     border-radius: 20px;
     border: none;
     display: flex;
     margin-top: 3%;
     background-color: cyan;
-    
+
     transition: all ease 0.5s;
 }
 
@@ -161,6 +178,7 @@ body{
 
 
 }
+
 .hero-box button a {
     text-decoration: none;
     color: black;
@@ -168,7 +186,7 @@ body{
 
 .hero-box .img-right {
     width: 350px;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,14 +221,17 @@ body{
     justify-content: center;
     gap: 2rem;
 }
-.youtubebox img{
+
+.youtubebox img {
     margin-top: 0.7rem;
     width: 13rem;
     height: 13rem;
 }
-.batch-linkedin{
+
+.batch-linkedin {
     margin: -19px 0px;
 }
+
 #connect {
     border: 1px solid white;
     color: white;
@@ -234,10 +255,13 @@ body{
 
 .intro-container {
     display: flex;
+    /* flex-direction: row; */
     flex-wrap: wrap;
+    padding: 0 50px;
+    margin: 1rem auto;
     justify-content: center;
-    align-items: center;
-    column-gap: 20px;
+    align-items: start;
+    column-gap: 40px;
 
 }
 
@@ -265,17 +289,20 @@ body{
 }
 
 .intro-content-section h2 {
-    /* z-index: +3; */
+  
     color: white;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     text-align: center;
+    cursor: pointer;
+    text-decoration: none;
     transition: 0.2s ease;
     font-size: 23px;
 }
 
-.intro-content-section h2:hover {
+.intro-content-section h2:hover,
+.contact_items h3:hover {
     color: cyan;
 }
 
@@ -286,4 +313,63 @@ body{
     font-size: 17px;
     font-weight: 300;
     text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 80%;
+    row-gap: 10px;
+}
+
+.contact_items {
+    background-color: #fdf49700;
+    width: 100%;
+    border: 1px solid #ffff;
+    margin: 15px;
+
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: all ease 0.9s;
+}
+
+.contact_items:hover {
+
+    color: cyan;
+    transition: all ease 0.5s;
+     /* transition: transform 0.9s all ease; */
+    transform: scale(1.1);
+
+}
+
+.contact_items a img {
+    background-color: #fff;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.contact_items a {
+    text-decoration: none;
+    display: flex;
+    color: #fff;
+   
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.contact_items h3 {
+    color: white;
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    transition: 0.2s ease;
+    font-size: 23px;
 }
